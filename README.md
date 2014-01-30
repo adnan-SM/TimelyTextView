@@ -36,7 +36,6 @@ Java -
                          numView.setAnimationType("loop");
                          numView.setCountType("up");
                    }
-                         
         }
 
         
