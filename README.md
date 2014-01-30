@@ -11,15 +11,15 @@ I have just figured out missing bits & pieces and made a simple library out of i
 
 Usage :
 
-<com.example.timelytextview.NumberView  xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:textAppearance="?android:attr/textAppearanceLarge" 
-        app:animate="once" 
-        app:count="down"
-   />
+        <com.example.timelytextview.NumberView  xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" 
+                app:animate="once" 
+                app:count="down"
+           />
    
 
 
