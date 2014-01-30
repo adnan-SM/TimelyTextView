@@ -260,5 +260,16 @@ import android.view.animation.Interpolator;
 	    	countType = type;
 	    }
 	    
+	    
+	    public String getAnimationType()
+	    {
+	    	return animationType;
+	    }
+	    
+	    public String getCountType()
+	    {
+	    	return countType;
+	    }
+	    
 	}
 
