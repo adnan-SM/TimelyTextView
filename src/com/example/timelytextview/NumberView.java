@@ -81,7 +81,6 @@ import android.view.animation.Interpolator;
 	    };
 	     
 	    
-	    // The 5 end points. (Note: The last end point is the first end point of the next segment.
 	    private final float[][][] mPointsDown = {
 
 	    	{{146.5f, 100}, {47, 74}, {154, 74}, {90, 180}, {90, 180}}, // 9
@@ -96,7 +95,6 @@ import android.view.animation.Interpolator;
     		{{44.5f, 100}, {100, 18}, {156, 100}, {100, 180}, {44.5f, 100}} // 0
 	    };
 	 
-	    // The set of the "first" control points of each segment.
 	    private final float[][][] mControlPointDown1 = {
 
 	    		{{124, 136}, {42, 8}, {152, 108}, {90, 180}}, // 9
@@ -112,7 +110,6 @@ import android.view.animation.Interpolator;
 	    
 	    };
 	 
-	    // The set of the "second" control points of each segment.
 	    private final float[][][] mControlPointDown2 = { 
 	    		
 	    		{{54, 134}, {148, -8}, {129, 121}, {90, 180}}, // 9
@@ -180,9 +177,7 @@ import android.view.animation.Interpolator;
 	 
 	        super.onDraw(canvas);
 	 
-	        // Frames 0, 1 is the first pause.
-	        // Frames 9, 10 is the last pause.
-	        // Constrain current frame to be between 0 and 6.
+	      
 	        final int currentFrame;
 	        if (mFrame < 2) {
 	            currentFrame = 0;
@@ -234,13 +229,13 @@ import android.view.animation.Interpolator;
 	        // Each number change has 10 frames. Reset.
 	        if (mFrame == 10) {
 	        	numCounter++;
-	            // Reset to zarro.
+	            // Reset to zero.
 	            mFrame = 0;
 	 
 	            mCurrent = mNext;
 	            mNext++;
 	 
-	            // Reset to zarro.
+	            // Reset to zero.
 	            if (mNext == 10) {
 	                mNext = 0;
 	            }
