@@ -6,7 +6,7 @@ Animated TextView like Timely app
 Intital commit for Animated TextView present in the Timely(Alarm) App.
 This is just an addition to the concept explained by Sriram Ramani here : http://sriramramani.wordpress.com/2013/10/14/number-tweening/
 
-I have just figured out missing bits & pieces and made a simple library out of it. Please thank Sriram if this helped you. Also please note I have been very busy and this was the work of just 2hrs on a lazy Monday afternoon, so there might be a few bugs. It would be great if anyone else wants to contribute and take this to the next level. Have a few ideas in mind already, feel free to get in touch and send Pull Requests.
+I have just figured out missing bits & pieces and made a simple library out of it. Please thank Sriram if this helped you. Also please note I have been very busy and this was the outcome  of just 2hrs of work on a lazy Monday afternoon, so there might be a few bugs. It would be great if anyone else wants to contribute and take this to the next level. Have a few ideas in mind already, feel free to get in touch and send Pull Requests.
 
 
 Usage :
