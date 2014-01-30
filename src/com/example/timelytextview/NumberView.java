@@ -255,5 +255,10 @@ import android.view.animation.Interpolator;
 	    }
 	    
 	    
+	     public void setCountType(String type)
+	    {
+	    	countType = type;
+	    }
+	    
 	}
 
