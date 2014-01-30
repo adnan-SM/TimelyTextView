@@ -47,3 +47,5 @@ animate = once, loop (loop will make the numbers count infintely in a loop from 
 count = up, down (up will count the numbers from 0-9 while down will count from 9-0)
 
 
+
+P.S : I suck at UI and animations and don't really know much, so if there are any bugs/performance issues I am to blame. Feel free to point them out to me so that I can fix them. It would be even better if you fix them ! 
