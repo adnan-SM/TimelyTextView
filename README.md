@@ -34,6 +34,7 @@ Java -
                          setContentView(R.layout.activity_main);
                          numView = (NumberView) findViewById(R.id.textView1);
                          numView.setAnimationType("loop");
+                         numView.setCountType("up");
                    }
                          
         }
