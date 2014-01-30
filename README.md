@@ -11,6 +11,8 @@ I have just figured out missing bits & pieces and made a simple library out of i
 
 Usage :
 
+XML Layout -
+
         <com.example.timelytextview.NumberView  xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
@@ -22,6 +24,21 @@ Usage :
            />
    
 
+Java -
+
+         public class MainActivity extends Activity {
+         NumberView numView;
+                   @Override
+                   protected void onCreate(Bundle savedInstanceState) {
+                         super.onCreate(savedInstanceState);
+                         setContentView(R.layout.activity_main);
+                         numView = (NumberView) findViewById(R.id.textView1);
+                         numView.setAnimationType("loop");
+                   }
+                         
+        }
+
+        
 
 The animate and count parameters control the looping and counter. 
 
