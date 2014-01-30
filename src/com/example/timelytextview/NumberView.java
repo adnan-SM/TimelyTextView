@@ -24,6 +24,7 @@ import android.view.animation.Interpolator;
 	    private int mCurrent = 0;
 	    private int mNext = 1;
 	    private int numCounter; 
+	    private int TIME = 85;
 	    
 	    
 	    private String animationType ="loop";
@@ -131,6 +132,7 @@ import android.view.animation.Interpolator;
 	    public NumberView(Context context, AttributeSet attrs) {
 	        super(context, attrs);
 	         
+	        // Get values of animationType and countType from XML 
 	        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.MyCustomView);
 
 	        String animType = a.getString(R.styleable.MyCustomView_animate);
@@ -140,6 +142,7 @@ import android.view.animation.Interpolator;
 	        countType = counter;
 	        
 	        
+	        //Choose points to count Up/Down based on countType
 	        if(countType.equalsIgnoreCase("up"))
 	        {
 	        	mPoints = mPointsUp;
@@ -242,10 +245,11 @@ import android.view.animation.Interpolator;
 	        }
 	        
 	        if(numCounter == 9 && animationType.equalsIgnoreCase("once")){
-	        	
+	        	// Do nothing here, as we have to just count up/down once.
 	        }else{
-	        // Callback for the next frame.
-	        postInvalidateDelayed(85);
+	        // Callback for the next frame so that we can loop indefinitely.
+	        
+	        postInvalidateDelayed(TIME);      // Adjust TIME parameter here to increase/decrease speed
 	        }
 	    }
 	    
