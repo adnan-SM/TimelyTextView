@@ -15,7 +15,7 @@ import android.view.animation.Interpolator;
 	public class NumberView extends View {
 		 
 	    
-		private final Interpolator mInterpolator;
+	    private final Interpolator mInterpolator;
 	    private final Paint mPaint;
 	    private final Path mPath;
 	    
@@ -36,7 +36,7 @@ import android.view.animation.Interpolator;
 	    private float[][][] mControlPoint1 = null;
 	    private  float[][][] mControlPoint2 = null;
 	    
-	    // The 5 end points. (Note: The last end point is the first end point of the next segment.
+	    // The 5 end points. 
 	    private final float[][][] mPointsUp = {
 	        {{44.5f, 100}, {100, 18}, {156, 100}, {100, 180}, {44.5f, 100}}, // 0
 	        {{77, 20.5f}, {104.5f, 20.5f}, {104.5f, 181},{104.5f, 181},{104.5f, 181}}, //1
@@ -51,7 +51,7 @@ import android.view.animation.Interpolator;
 	    };
 	 
 	    // The set of the "first" control points of each segment.
-	    private final float[][][] mControlPointUp1 = {
+	    private final float[][][] mControlPointUpFirst = {
 	    		{{44.5f, 60}, {133, 18}, {156 , 140}, {67, 180}}, // 0
 	    		{{77, 20.5f}, {104.5f, 20.5f}, {104.5f, 181}, {104.5f, 181}}, // 1
 	    		{{59, 2}, {144.5f, 78}, {94, 138}, {57, 177}}, // 2
@@ -66,7 +66,7 @@ import android.view.animation.Interpolator;
 	    };
 	 
 	    // The set of the "second" control points of each segment.
-	    private final float[][][] mControlPointUp2 = { 
+	    private final float[][][] mControlPointUpSecond = { 
 	    		
 	    		{{67, 18}, {156, 60}, {133, 180}, {44.5f, 140}}, // 0
 	    		{{104.5f, 20.5f}, {104.5f, 181}, {104.5f, 181}, {104.5f, 181}}, // 1
@@ -95,7 +95,7 @@ import android.view.animation.Interpolator;
     		{{44.5f, 100}, {100, 18}, {156, 100}, {100, 180}, {44.5f, 100}} // 0
 	    };
 	 
-	    private final float[][][] mControlPointDown1 = {
+	    private final float[][][] mControlPointDownFirst = {
 
 	    		{{124, 136}, {42, 8}, {152, 108}, {90, 180}}, // 9
 	    		{{44, 95}, {154, 19}, {44, 96}, {154, 179}}, // 8
@@ -110,7 +110,7 @@ import android.view.animation.Interpolator;
 	    
 	    };
 	 
-	    private final float[][][] mControlPointDown2 = { 
+	    private final float[][][] mControlPointDownSecond = { 
 	    		
 	    		{{54, 134}, {148, -8}, {129, 121}, {90, 180}}, // 9
 	    		{{44, 19}, {154, 96}, {36, 179}, {154, 96}}, // 8
@@ -143,13 +143,13 @@ import android.view.animation.Interpolator;
 	        if(countType.equalsIgnoreCase("up"))
 	        {
 	        	mPoints = mPointsUp;
-	        	mControlPoint1 = mControlPointUp1;
-	        	mControlPoint2 = mControlPointUp2;
+	        	mControlPoint1 = mControlPointUpFirst;
+	        	mControlPoint2 = mControlPointUpSecond;
 	        }else
 	        {
 	        	mPoints = mPointsDown;
-	        	mControlPoint1 = mControlPointDown1;
-	        	mControlPoint2 = mControlPointDown2;
+	        	mControlPoint1 = mControlPointDownFirst;
+	        	mControlPoint2 = mControlPointDownSecond;
 	        }
 
 	        a.recycle();
