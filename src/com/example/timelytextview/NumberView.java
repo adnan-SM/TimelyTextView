@@ -171,16 +171,8 @@ import android.view.animation.Interpolator;
 	     
 	    @Override
 	    public void onDraw(Canvas canvas) {
-	        int count = canvas.saveLayer(0, 0, getWidth(), getHeight(), null,    
-	                Canvas.MATRIX_SAVE_FLAG |
-	                Canvas.CLIP_SAVE_FLAG |
-	                Canvas.HAS_ALPHA_LAYER_SAVE_FLAG |
-	                Canvas.FULL_COLOR_LAYER_SAVE_FLAG |
-	                Canvas.CLIP_TO_LAYER_SAVE_FLAG);
-	 
 	        super.onDraw(canvas);
 	 
-	      
 	        final int currentFrame;
 	        if (mFrame < 2) {
 	            currentFrame = 0;
@@ -224,7 +216,7 @@ import android.view.animation.Interpolator;
 	        // Draw the path.
 	        canvas.drawPath(mPath, mPaint);
 	 
-	        canvas.restoreToCount(count);
+	       
 	         
 	        // Next frame.
 	        mFrame++;
