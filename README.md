@@ -27,14 +27,14 @@ XML Layout -
 Java -
 
          public class MainActivity extends Activity {
-         NumberView numView;
+         NumberView mNumView;
                    @Override
                    protected void onCreate(Bundle savedInstanceState) {
                          super.onCreate(savedInstanceState);
                          setContentView(R.layout.activity_main);
-                         numView = (NumberView) findViewById(R.id.textView1);
-                         numView.setAnimationType("loop");
-                         numView.setCountType("up");
+                         mNumView = (NumberView) findViewById(R.id.textView1);
+                         mNumView.setAnimationType("loop");
+                         mNumView.setCountType("up");
                    }
         }
 
