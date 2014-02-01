@@ -138,8 +138,15 @@ import android.view.animation.Interpolator;
 	        String animType = a.getString(R.styleable.MyCustomView_animate);
 	        String counter = a.getString(R.styleable.MyCustomView_count);
 
-	        animationType = animType;
-	        countType = counter;
+		if(animType!= null && animType.trim().length()>0) {
+			
+	        	animationType = animType;
+		}
+		
+		if(counter!= null && counter.trim().length()>0) {
+	        
+	        	countType = counter;
+		}
 	        
 	        
 	        //Choose points to count Up/Down based on countType
