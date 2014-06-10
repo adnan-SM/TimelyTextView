@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <declare-styleable name="MyCustomView">
-        <attr name="android:text"/>
-        <attr name="android:textColor"/>            
-        <attr name="animate" format="string" />
-        <attr name="count" format="string" />
-    </declare-styleable>
-</resources>
