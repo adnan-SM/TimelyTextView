@@ -1,5 +1,9 @@
 apply plugin: 'android-library'
 
+dependencies {
+    compile 'com.nineoldandroids:library:2.4.0'
+}
+
 android {
     compileSdkVersion 19
     buildToolsVersion '19.1.0'
