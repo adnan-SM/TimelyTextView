@@ -13,39 +13,27 @@ Usage :
 
 XML Layout -
 
-        <com.example.timelytextview.NumberView  xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="40sp"
-                android:textAppearance="?android:attr/textAppearanceLarge" 
-                app:animate="once" 
-                app:count="down"
-           />
+     <com.github.adnansm.timelytextview.TimelyView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            />
    
 
 Java -
 
          public class MainActivity extends Activity {
-         NumberView mNumView;
+         private TimelyView timelyView; 
                    @Override
                    protected void onCreate(Bundle savedInstanceState) {
                          super.onCreate(savedInstanceState);
                          setContentView(R.layout.activity_main);
-                         mNumView = (NumberView) findViewById(R.id.textView1);
-                         mNumView.setAnimationType("loop");
-                         mNumView.setCountType("up");
+                         timelyView = (NumberView) findViewById(R.id.textView1);
+                        
                    }
         }
-
-        
-
-The animate and count parameters control the looping and counter. 
-
-animate = once, loop (loop will make the numbers count infintely in a loop from 0-9, once would count only once)
-
-count = up, down (up will count the numbers from 0-9 while down will count from 9-0)
-
 
 
 P.S : I suck at UI and animations and don't really know much, so if there are any bugs/performance issues I am to blame. Feel free to point them out to me so that I can fix them. It would be even better if you fix them ! 
