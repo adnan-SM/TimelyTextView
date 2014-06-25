@@ -30,7 +30,7 @@ Java -
                    protected void onCreate(Bundle savedInstanceState) {
                          super.onCreate(savedInstanceState);
                          setContentView(R.layout.activity_main);
-                         timelyView = (NumberView) findViewById(R.id.textView1);
+                         timelyView = (TimelyView) findViewById(R.id.textView1);
                         
                    }
         }
