@@ -3,7 +3,7 @@ package com.github.adnansm.timelytextview.animation;
 import com.nineoldandroids.animation.TypeEvaluator;
 
 public class TimelyEvaluator implements TypeEvaluator<float[][]> {
-    private static float[][] _cachedPoints = null;
+    private float[][] _cachedPoints = null;
 
     @Override
     public float[][] evaluate(float fraction, float[][] startValue, float[][] endValue) {
