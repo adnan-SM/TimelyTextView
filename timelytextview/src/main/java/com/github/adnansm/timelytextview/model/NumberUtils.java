@@ -8,6 +8,8 @@ public class NumberUtils {
 
     public static float[][] getControlPointsFor(int start) {
         switch (start) {
+            case (-1):
+                return Null.getInstance().getControlPoints();
             case 0:
                 return Zero.getInstance().getControlPoints();
             case 1:
