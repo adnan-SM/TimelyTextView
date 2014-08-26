@@ -52,21 +52,23 @@ Java -
 P.S : I suck at UI and animations and don't really know much, so if there are any bugs/performance issues I am to blame. Feel free to point them out to me so that I can fix them. It would be even better if you fix them ! 
 
 
-<b>LICENSE</b>
+License
+--------
 
-Copyright 2014 Adnan A M.
+    Copyright 2013 Adnan A M.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
+       http://www.apache.org/licenses/LICENSE-2.0
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/adnan-SM/timelytextview/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
