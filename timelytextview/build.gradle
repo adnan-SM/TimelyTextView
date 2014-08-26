@@ -26,5 +26,3 @@ android {
         }
     }
 }
-
-apply from: 'https://raw.github.com/aectann/gradle-mvn-push/master/gradle-mvn-push.gradle'
