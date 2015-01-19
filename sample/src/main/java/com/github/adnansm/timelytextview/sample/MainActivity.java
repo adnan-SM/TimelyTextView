@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 from = position - 1;
-                if(to != NO_VALUE && to != NO_VALUE) {
+                if(from != NO_VALUE && to != NO_VALUE) {
                     objectAnimator = timelyView.animate(from, to);
                     objectAnimator.setDuration(DURATION);
                 } else {
