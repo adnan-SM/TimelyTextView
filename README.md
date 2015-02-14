@@ -24,30 +24,29 @@ I have just figured out missing bits & pieces and made a simple library out of i
 
 Usage :
 
-XML Layout -
+XML Layout:
+``` xml
+<com.github.adnansm.timelytextview.TimelyView
+       android:id="@+id/textView1"
+       android:layout_width="wrap_content"
+       android:layout_height="40dp"
+       android:layout_gravity="center"
+       android:layout_margin="@dimen/activity_vertical_margin"
+       />
+```
 
-     <com.github.adnansm.timelytextview.TimelyView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:layout_margin="@dimen/activity_vertical_margin"
-            />
-   
-
-Java -
-
-         public class MainActivity extends Activity {
-         private TimelyView timelyView; 
-                   @Override
-                   protected void onCreate(Bundle savedInstanceState) {
-                         super.onCreate(savedInstanceState);
-                         setContentView(R.layout.activity_main);
-                         timelyView = (TimelyView) findViewById(R.id.textView1);
-                        
-                   }
-        }
-
+Java:
+``` java
+    public class MainActivity extends Activity {
+    private TimelyView timelyView; 
+              @Override
+              protected void onCreate(Bundle savedInstanceState) {
+                    super.onCreate(savedInstanceState);
+                    setContentView(R.layout.activity_main);
+                    timelyView = (TimelyView) findViewById(R.id.textView1);
+              }
+   }
+```
 
 License
 --------
