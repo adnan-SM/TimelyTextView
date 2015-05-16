@@ -48,6 +48,20 @@ Java:
    }
 ```
 
+Install
+--------
+
+You can install using Gradle:
+
+```gradle
+	repositories {
+	    maven { url "https://jitpack.io" }
+	}
+	dependencies {
+	    compile 'com.github.adnan-SM:TimelyTextView:1.0'
+	}
+```
+
 License
 --------
 
