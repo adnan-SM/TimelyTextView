@@ -13,7 +13,7 @@ import com.nineoldandroids.animation.ObjectAnimator;
 import com.nineoldandroids.util.Property;
 
 public class TimelyView extends View {
-    private static final float                           RATIO                   = 1f;
+    private static final float RATIO = 1f;
     private static final Property<TimelyView, float[][]> CONTROL_POINTS_PROPERTY = new Property<TimelyView, float[][]>(float[][].class, "controlPoints") {
         @Override
         public float[][] get(TimelyView object) {
@@ -25,9 +25,9 @@ public class TimelyView extends View {
             object.setControlPoints(value);
         }
     };
-    private              Paint                           mPaint                  = null;
-    private              Path                            mPath                   = null;
-    private              float[][]                       controlPoints           = null;
+    private Paint mPaint = null;
+    private Path mPath = null;
+    private float[][] controlPoints = null;
 
     public TimelyView(Context context) {
         super(context);
@@ -102,9 +102,9 @@ public class TimelyView extends View {
         int maxHeight = (int) (widthWithoutPadding / RATIO);
 
         if (widthWithoutPadding > maxWidth) {
-            width = maxWidth + getPaddingLeft() + getPaddingRight();
+            width = maxWidth + getPaddingLeft() + getPaddingRight() + 3;
         } else {
-            height = maxHeight + getPaddingTop() + getPaddingBottom();
+            height = maxHeight + getPaddingTop() + getPaddingBottom() + 3;
         }
 
         setMeasuredDimension(width, height);
