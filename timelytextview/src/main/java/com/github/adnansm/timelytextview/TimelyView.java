@@ -1,6 +1,7 @@
 package com.github.adnansm.timelytextview;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -28,6 +29,7 @@ public class TimelyView extends View {
     private              Paint                           mPaint                  = null;
     private              Path                            mPath                   = null;
     private              float[][]                       controlPoints           = null;
+    private int textColor;
 
     public TimelyView(Context context) {
         super(context);
@@ -36,6 +38,9 @@ public class TimelyView extends View {
 
     public TimelyView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        TypedArray typedArray=context.obtainStyledAttributes(attrs, R.styleable.TimelyView);
+        textColor=typedArray.getColor(R.styleable.TimelyView_text_color,Color.BLACK);
+        typedArray.recycle();
         init();
     }
 
@@ -114,7 +119,7 @@ public class TimelyView extends View {
         // A new paint with the style as stroke.
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
-        mPaint.setColor(Color.BLACK);
+        mPaint.setColor(textColor);
         mPaint.setStrokeWidth(5.0f);
         mPaint.setStyle(Paint.Style.STROKE);
         mPath = new Path();
